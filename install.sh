@@ -40,6 +40,7 @@ cat > $bin <<- EOM
 cd "$cur"
 ## unset LD_PRELOAD in case termux-exec is installed
 unset LD_PRELOAD
+set -x
 echo "root is required to fully enter proot"
 command="su -c /data/data/com.termux/files/usr/bin/proot"
 command+=" --link2symlink"
