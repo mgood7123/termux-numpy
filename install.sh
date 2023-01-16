@@ -61,7 +61,7 @@ com="\$@"
 if [ -z "\$1" ];then
     exec \$command
 else
-    \$command -c "\$com"
+    \$command -c \"\$com\"
 fi
 EOM
 
