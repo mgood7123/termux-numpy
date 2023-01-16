@@ -12,6 +12,8 @@ case `dpkg --print-architecture` in
     ;;
 esac
 
+pkg install wget proot
+
 folder="ubuntu-$linarch--numpy--rootfs"
 uv=22.04
 tarball="ubuntu.tar.gz"
