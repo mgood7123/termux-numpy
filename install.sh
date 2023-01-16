@@ -12,7 +12,7 @@ case `dpkg --print-architecture` in
     ;;
 esac
 
-pkg install wget proot
+pkg install wget proot openssl
 
 folder="ubuntu-$linarch--numpy--rootfs"
 uv=22.04
