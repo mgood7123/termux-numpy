@@ -79,8 +79,8 @@ echo "installing core packages for apt" &&
 ./$bin "apt install -y wget curl tzdata" &&
 cd "$cur" &&
 ./$bin "unminimize"
-echo "installing python and gcc" &&
-./$bin "apt install python gcc" &&
+echo "installing python, pip, and gcc" &&
+./$bin "apt install python3 python3-pip gcc" &&
 echo "installing scipy which depends on numpy" &&
 ./$bin "pip install scipy" &&
 echo "You can now launch Ubuntu with the ./${bin} script"
